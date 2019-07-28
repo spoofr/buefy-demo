@@ -1,6 +1,5 @@
 <template>
   <div class="about">
-    
     <section class="hero is-primary is-bold">
       <div class="hero-body">
         <div class="container">
@@ -13,7 +12,6 @@
         </div>
       </div>
     </section>
-
     <section class="section">
       <div class="container">
         <div class="columns is-desktop">
@@ -35,7 +33,6 @@
                   <b-field horizontal label="Name">
                       <b-input name="subject" expanded></b-input>
                   </b-field>
-
                   <b-field horizontal label="Member?">
                     <div class="field-body">
                       <b-radio v-model="radio"
@@ -48,13 +45,11 @@
                       </b-radio>
                     </div>
                   </b-field>
-
                   <b-field horizontal label="Subject"
                     type="is-danger"
                     message="Sorry, subject not available.">
                     <b-input name="subject" expanded></b-input>
                   </b-field>
-                  
                   <b-field horizontal label="Country">
                     <b-select placeholder="Select a country">
                         <option
@@ -65,14 +60,12 @@
                         </option>
                     </b-select>
                   </b-field>
-              
                   <b-field horizontal label="Select date">
                     <b-datepicker
                         placeholder="Click to select..."
                         icon="calendar-today">
                     </b-datepicker>
                   </b-field>
-
                   <b-field horizontal label="Select time">
                     <b-clockpicker
                         placeholder="Click to select..."
@@ -80,7 +73,6 @@
                         hour-format="12">
                     </b-clockpicker>
                   </b-field>
-
                   <b-field horizontal label="Questions">
                     <b-input type="textarea"
                       minlength="10"
@@ -88,7 +80,6 @@
                       placeholder="Type somethin here..">
                     </b-input>
                   </b-field>
-
                   <b-field horizontal label="Add family members">
                     <b-taginput
                         v-model="tags"
@@ -98,7 +89,6 @@
                     </b-taginput>
                   </b-field>
                   <!-- <p class="content"><b>Tags:</b> {{ tags }}</p> -->
-                  
                   <b-field horizontal label="Upload docs">
                     <b-upload v-model="file">
                       <a class="button is-primary">
@@ -121,8 +111,6 @@
         </div>
       </div>
     </section>
-
-
     <section class="section">
       <div class="container">
         <div class="columns is-desktop">
@@ -174,9 +162,6 @@
         </div>
       </div>
     </section>
-
-
-
   </div>
 </template>
 
